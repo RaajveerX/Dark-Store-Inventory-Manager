@@ -1,0 +1,69 @@
+<mvc:View
+    controllerName="ui5.darkstores-app.controller.Detail"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Page
+        title="{darkstore>name}"
+        showNavButton="true"
+        navButtonPress=".onNavBack"
+    >
+        <!-- Header up top, edit and delete functionality calls corresponding dialog fragment-->
+        <headerContent>
+            <Button
+                icon="sap-icon://edit"
+                text="Edit"
+                press=".onEditPress"
+                type="Transparent"
+            />
+            <Button
+                icon="sap-icon://delete"
+                text="Delete"
+                press=".onDeletePress"
+                type="Transparent"
+            />
+        </headerContent>
+
+        <!-- Displaying Key Information about the Darkstore -->
+        <FlexBox
+            alignItems="Start"
+            justifyContent="SpaceBetween"
+            class="sapUiLargeMarginTop sapUiMediumMarginBeginEnd"
+        >
+            <ObjectStatus
+                icon="{= ${darkstore>is_active} ? 'sap-icon://message-success' : 'sap-icon://message-error' }"
+                state="{= ${darkstore>is_active} ? 'Success' : 'Error' }"
+                text="{= ${darkstore>is_active} ? 'Active' : 'Inactive' }"
+                class="sapMObjectStatusLarge"
+            />
+
+            <ObjectStatus
+                icon="sap-icon://product"
+                text="Total Products: {= ${darkstore>products}.length}"
+                class="sapMObjectStatusLarge"
+            />
+
+            <ObjectStatus
+                icon="sap-icon://inventory"
+                text="Capacity Used: {= Math.min(Math.round((${darkstore>products}.length * 100) / ${darkstore>capacity}), 100) }%"
+                class="sapMObjectStatusLarge"
+                state="{= Math.min(Math.round((${darkstore>products}.length * 100) / ${darkstore>capacity}), 100) >= 80 ? 'Error' : 'Success' }"
+            />
+        </FlexBox>
+
+        <!-- Displaying secondary information about the Darkstore -->
+        <ObjectHeader title="{darkstore>location/address}">
+            <attributes>
+                <ObjectAttribute text="Name: {darkstore>name}" />
+            </attributes>
+            <attributes>
+                <ObjectAttribute
+                    text="Total Product Capacity: {darkstore>capacity}"
+                />
+            </attributes>
+        </ObjectHeader>
+
+        <!-- Displaying products in the form of a table, sorted based on low stock -->
+        <mvc:XMLView viewName="ui5.darkstores-app.view.ProductList" />
+    </Page>
+</mvc:View>

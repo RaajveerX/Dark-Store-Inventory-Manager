@@ -1,0 +1,78 @@
+<!-- This is the panel used to Add Darkstores, tied to the AddDarkstorePanel controller -->
+<mvc:View
+    controllerName="ui5.darkstores-app.controller.AddDarkstorePanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Panel
+        headerText="Add Dark Store"
+        class="sapUiResponsiveMargin"
+        width="auto"
+    >
+        <content>
+            <VBox>
+                <HBox>
+                    <VBox width="47.5%">
+                        <Label
+                            text="Address"
+                            labelFor="addressInput"
+                        />
+                        <Input
+                            id="addressInput"
+                            value="{/darkstore/location/address}"
+                            valueLiveUpdate="true"
+                            width="100%"
+                        />
+                    </VBox>
+                    <HBox width="5%" />
+                    <VBox width="47.5%">
+                        <Label
+                            text="Latitude"
+                            labelFor="latitudeInput"
+                        />
+                        <Input
+                            id="latitudeInput"
+                            value="{/darkstore/location/latitude}"
+                            valueLiveUpdate="true"
+                            width="100%"
+                        />
+                    </VBox>
+                </HBox>
+                <HBox>
+                    <VBox width="47.5%">
+                        <Label
+                            text="Longitude"
+                            labelFor="longitudeInput"
+                        />
+                        <Input
+                            id="longitudeInput"
+                            value="{/darkstore/location/longitude}"
+                            valueLiveUpdate="true"
+                            width="100%"
+                        />
+                    </VBox>
+                    <HBox width="5%" />
+                    <VBox width="47.5%">
+                        <Label
+                            text="Name"
+                            labelFor="nameInput"
+                        />
+                        <Input
+                            id="nameInput"
+                            value="{/darkstore/name}"
+                            valueLiveUpdate="true"
+                            width="100%"
+                        />
+                    </VBox>
+                </HBox>
+
+                <!-- onAddDarkstore sends a POST call to the cloud run function-->
+                <Button
+                    text="Submit"
+                    press=".onAddDarkstore"
+                    class="myCustomButton"
+                />
+            </VBox>
+        </content>
+    </Panel>
+</mvc:View>

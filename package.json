@@ -1,0 +1,14 @@
+{
+  "name": "ui5.darkstores-app",
+  "version": "1.0.0",
+  "private": true,
+  "author": "SAP SE",
+  "description": "Darkstore Inventory Manager",
+  "scripts": {
+    "start": "ui5 serve -o index.html --accept-remote-connections"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^4",
+    "ui5-middleware-simpleproxy": "^3.4.0"
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "Darkstores": [
+    {
+      "name": "Darkstore Everest",
+      "capacity": 120,
+      "location": {
+        "address": "4 Boltwood Avenue, Amherst",
+        "latitude": 42.3733,
+        "longitude": -72.5201
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P001",
+          "name": "Apples",
+          "price": 1.29,
+          "stock": 75,
+          "category": "Produce"
+        },
+        {
+          "id": "P002",
+          "name": "Cheddar",
+          "price": 6.49,
+          "stock": 40,
+          "category": "Dairy"
+        },
+        {
+          "id": "P003",
+          "name": "Bread",
+          "price": 3.19,
+          "stock": 35,
+          "category": "Bakery"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Sahara",
+      "capacity": 90,
+      "location": {
+        "address": "99 Main St, Amherst",
+        "latitude": 42.3712,
+        "longitude": -72.5215
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P004",
+          "name": "Rice",
+          "price": 9.99,
+          "stock": 60,
+          "category": "Grains"
+        },
+        {
+          "id": "P005",
+          "name": "Lentils",
+          "price": 4.79,
+          "stock": 50,
+          "category": "Pulses"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Amazon",
+      "capacity": 75,
+      "location": {
+        "address": "East Pleasant St, Amherst",
+        "latitude": 42.3751,
+        "longitude": -72.5195
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P006",
+          "name": "Milk",
+          "price": 4.99,
+          "stock": 30,
+          "category": "Dairy"
+        },
+        {
+          "id": "P007",
+          "name": "Yogurt",
+          "price": 3.29,
+          "stock": 45,
+          "category": "Dairy"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Niagara",
+      "capacity": 110,
+      "location": {
+        "address": "South East St, Amherst",
+        "latitude": 42.3740,
+        "longitude": -72.5208
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P008",
+          "name": "Oil",
+          "price": 6.49,
+          "stock": 55,
+          "category": "Cooking Oil"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Desert",
+      "capacity": 60,
+      "location": {
+        "address": "Northampton Rd, Amherst",
+        "latitude": 42.3735,
+        "longitude": -72.5203
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P009",
+          "name": "Pasta",
+          "price": 2.19,
+          "stock": 80,
+          "category": "Grains"
+        },
+        {
+          "id": "P010",
+          "name": "Sauce",
+          "price": 2.79,
+          "stock": 65,
+          "category": "Canned Goods"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Glacier",
+      "capacity": 140,
+      "location": {
+        "address": "Leverett Rd, Amherst",
+        "latitude": 42.3737,
+        "longitude": -72.5205
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P011",
+          "name": "Sugar",
+          "price": 1.89,
+          "stock": 100,
+          "category": "Baking"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Canyon",
+      "capacity": 85,
+      "location": {
+        "address": "South Pleasant St, Amherst",
+        "latitude": 42.3733,
+        "longitude": -72.5201
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P012",
+          "name": "Quinoa",
+          "price": 5.49,
+          "stock": 50,
+          "category": "Grains"
+        },
+        {
+          "id": "P013",
+          "name": "Spinach",
+          "price": 3.99,
+          "stock": 40,
+          "category": "Produce"
+        },
+        {
+          "id": "P014",
+          "name": "Kale",
+          "price": 2.49,
+          "stock": 25,
+          "category": "Produce"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Volcano",
+      "capacity": 50,
+      "location": {
+        "address": "Main St, Amherst",
+        "latitude": 42.3735,
+        "longitude": -72.5203
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P015",
+          "name": "Salt",
+          "price": 0.99,
+          "stock": 120,
+          "category": "Pantry"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Valley",
+      "capacity": 95,
+      "location": {
+        "address": "College St, Amherst",
+        "latitude": 42.3740,
+        "longitude": -72.5208
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P016",
+          "name": "Rice",
+          "price": 3.79,
+          "stock": 70,
+          "category": "Grains"
+        },
+        {
+          "id": "P017",
+          "name": "Broccoli",
+          "price": 2.49,
+          "stock": 55,
+          "category": "Produce"
+        }
+      ]
+    },
+    {
+      "name": "Darkstore Tundra",
+      "capacity": 130,
+      "location": {
+        "address": "Amity St, Amherst",
+        "latitude": 42.3737,
+        "longitude": -72.5205
+      },
+      "is_active": true,
+      "products": [
+        {
+          "id": "P018",
+          "name": "Chickpeas",
+          "price": 2.99,
+          "stock": 90,
+          "category": "Canned Goods"
+        }
+      ]
+    },
+    {
+        "name": "Darkstore Oasis",
+        "capacity": 115,
+        "location": {
+          "address": "University Drive, Amherst",
+          "latitude": 42.3891,
+          "longitude": -72.5281
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P019",
+            "name": "Bananas",
+            "price": 0.99,
+            "stock": 100,
+            "category": "Produce"
+          },
+          {
+            "id": "P020",
+            "name": "Oranges",
+            "price": 1.49,
+            "stock": 80,
+            "category": "Produce"
+          },
+          {
+            "id": "P021",
+            "name": "Cereal",
+            "price": 3.99,
+            "stock": 50,
+            "category": "Breakfast"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Fjord",
+        "capacity": 85,
+        "location": {
+          "address": "North Pleasant Street, Amherst",
+          "latitude": 42.3754,
+          "longitude": -72.5199
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P022",
+            "name": "Salmon",
+            "price": 12.99,
+            "stock": 30,
+            "category": "Seafood"
+          },
+          {
+            "id": "P023",
+            "name": "Tuna",
+            "price": 8.99,
+            "stock": 40,
+            "category": "Seafood"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Meadow",
+        "capacity": 70,
+        "location": {
+          "address": "Sunderland Road, Amherst",
+          "latitude": 42.3976,
+          "longitude": -72.5311
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P024",
+            "name": "Honey",
+            "price": 5.99,
+            "stock": 35,
+            "category": "Condiments"
+          },
+          {
+            "id": "P025",
+            "name": "Jam",
+            "price": 3.49,
+            "stock": 45,
+            "category": "Condiments"
+          },
+          {
+            "id": "P026",
+            "name": "Peanut Butter",
+            "price": 4.29,
+            "stock": 50,
+            "category": "Condiments"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Plateau",
+        "capacity": 100,
+        "location": {
+          "address": "Amity Street, Amherst",
+          "latitude": 42.3750,
+          "longitude": -72.5185
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P027",
+            "name": "Coffee",
+            "price": 7.99,
+            "stock": 60,
+            "category": "Beverages"
+          },
+          {
+            "id": "P028",
+            "name": "Tea",
+            "price": 4.99,
+            "stock": 70,
+            "category": "Beverages"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Cavern",
+        "capacity": 55,
+        "location": {
+          "address": "Pelham Road, Amherst",
+          "latitude": 42.3778,
+          "longitude": -72.5119
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P029",
+            "name": "Mushrooms",
+            "price": 2.99,
+            "stock": 40,
+            "category": "Produce"
+          },
+          {
+            "id": "P030",
+            "name": "Potatoes",
+            "price": 1.99,
+            "stock": 75,
+            "category": "Produce"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Savannah",
+        "capacity": 130,
+        "location": {
+          "address": "East Hadley Road, Amherst",
+          "latitude": 42.3589,
+          "longitude": -72.5269
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P031",
+            "name": "Beef",
+            "price": 9.99,
+            "stock": 40,
+            "category": "Meat"
+          },
+          {
+            "id": "P032",
+            "name": "Chicken",
+            "price": 7.99,
+            "stock": 50,
+            "category": "Meat"
+          },
+          {
+            "id": "P033",
+            "name": "Pork",
+            "price": 8.99,
+            "stock": 45,
+            "category": "Meat"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Lagoon",
+        "capacity": 80,
+        "location": {
+          "address": "Pomeroy Lane, Amherst",
+          "latitude": 42.3612,
+          "longitude": -72.5145
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P034",
+            "name": "Shrimp",
+            "price": 11.99,
+            "stock": 30,
+            "category": "Seafood"
+          },
+          {
+            "id": "P035",
+            "name": "Crab",
+            "price": 14.99,
+            "stock": 25,
+            "category": "Seafood"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Pinnacle",
+        "capacity": 95,
+        "location": {
+          "address": "Shays Street, Amherst",
+          "latitude": 42.3881,
+          "longitude": -72.5345
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P036",
+            "name": "Almonds",
+            "price": 6.99,
+            "stock": 55,
+            "category": "Nuts"
+          },
+          {
+            "id": "P037",
+            "name": "Cashews",
+            "price": 7.99,
+            "stock": 50,
+            "category": "Nuts"
+          },
+          {
+            "id": "P038",
+            "name": "Pistachios",
+            "price": 8.99,
+            "stock": 45,
+            "category": "Nuts"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Bayou",
+        "capacity": 65,
+        "location": {
+          "address": "Belchertown Road, Amherst",
+          "latitude": 42.3657,
+          "longitude": -72.5058
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P039",
+            "name": "Okra",
+            "price": 3.49,
+            "stock": 35,
+            "category": "Produce"
+          },
+          {
+            "id": "P040",
+            "name": "Bell Peppers",
+            "price": 1.99,
+            "stock": 60,
+            "category": "Produce"
+          }
+        ]
+      },
+      {
+        "name": "Darkstore Dune",
+        "capacity": 110,
+        "location": {
+          "address": "West Street, Amherst",
+          "latitude": 42.3703,
+          "longitude": -72.5320
+        },
+        "is_active": true,
+        "products": [
+          {
+            "id": "P041",
+            "name": "Dates",
+            "price": 4.99,
+            "stock": 40,
+            "category": "Dried Fruits"
+          },
+          {
+            "id": "P042",
+            "name": "Figs",
+            "price": 5.49,
+            "stock": 35,
+            "category": "Dried Fruits"
+          },
+          {
+            "id": "P043",
+            "name": "Raisins",
+            "price": 3.99,
+            "stock": 50,
+            "category": "Dried Fruits"
+          }
+        ]
+      }
+  ]
+}
+   
+  

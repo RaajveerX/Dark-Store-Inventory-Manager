@@ -1,0 +1,72 @@
+<mvc:View
+    controllerName="ui5.darkstores-app.controller.ProductList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Table
+        id="productTable"
+        items="{darkstore>products}"
+    >
+        <headerToolbar>
+            <Toolbar>
+                <Title text="Products" />
+                <ToolbarSpacer />
+                <SearchField
+                    width="50%"
+                    search=".onFilterProducts"
+                    placeholder="Search by name"
+                />
+                <Button
+                    icon="sap-icon://add"
+                    text="Add Product"
+                    press=".onAddProduct"
+                />
+            </Toolbar>
+        </headerToolbar>
+
+        <columns>
+            <Column>
+                <Text text="Name" />
+            </Column>
+            <Column>
+                <Text text="Category" />
+            </Column>
+            <Column hAlign="End">
+                <Text text="Price" />
+            </Column>
+            <Column hAlign="End">
+                <Text text="Stock" />
+            </Column>
+            <Column hAlign="End">
+                <Text text="Actions" />
+            </Column>
+        </columns>
+
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{darkstore>name}" />
+                    <Text text="{darkstore>category}" />
+                    <ObjectNumber
+                        number="{darkstore>price}"
+                        unit="USD"
+                    />
+                    <ObjectStatus
+                        text="{darkstore>stock}"
+                        state="{= ${darkstore>stock} >= 10 ? 'Success' : 'Error' }"
+                    />
+                    <HBox justifyContent="End">
+                        <Button
+                            icon="sap-icon://edit"
+                            press=".onEditProduct"
+                        />
+                        <Button
+                            icon="sap-icon://delete"
+                            press=".onDeleteProduct"
+                        />
+                    </HBox>
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>

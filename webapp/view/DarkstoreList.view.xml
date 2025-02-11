@@ -1,0 +1,61 @@
+<mvc:View
+    controllerName="ui5.darkstores-app.controller.DarkstoreList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <!-- Displays the darkstores, sorts based on active status-->
+    <List
+        id="darkstoreList"
+        headerText="Dark Stores"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{
+         path : 'darkstore>/Darkstores',
+         sorter : {
+            path : 'is_active',
+            descending: true
+         }
+      }"
+    >
+        <!-- Search Toolbar -->
+        <headerToolbar>
+            <Toolbar>
+                <Title text="Dark Stores" />
+                <ToolbarSpacer />
+                <SearchField
+                    width="50%"
+                    search=".onFilterDarkstores"
+                    placeholder="Search by address"
+                />
+            </Toolbar>
+        </headerToolbar>
+
+        <!-- Items are displayed here -->
+        <items>
+            <ObjectListItem
+                title="{darkstore>name}"
+                class="sapUiResponsivePadding"
+                numberState="{= Math.min(Math.round((${darkstore>products}.length * 100) / ${darkstore>capacity}), 100) >= 80 ? 'Error' : 'Success' }"
+                number="{= Math.min(Math.round((${darkstore>products}.length * 100) / ${darkstore>capacity}), 100) }%"
+                numberUnit="Capacity Used"
+                type="Navigation"
+                press=".onPress"
+            >
+                <attributes>
+                    <ObjectAttribute
+                        text="Address: {darkstore>location/address}"
+                    />
+                </attributes>
+
+                <!-- First Status: Operational or Not -->
+                <firstStatus>
+                    <ObjectStatus
+                        text="{= ${darkstore>is_active} ? 'Operational' : 'Inactive' }"
+                        state="{= ${darkstore>is_active} ? 'Success' : 'Error' }"
+                        icon="{= ${darkstore>is_active} ? 'sap-icon://accept' : 'sap-icon://decline' }"
+                    />
+                </firstStatus>
+            </ObjectListItem>
+        </items>
+    </List>
+</mvc:View>
