@@ -6,9 +6,9 @@
 - I was looking to get some experience with SAPUI5 and the MVC pattern and thought it would be interesting to build this
 
 ## Tech Stack
-Backend: Serverless, event-driven using GCP Cloud Run Functions on a Node.js runtime
-Frontend: SAPUI5
-Database: GCP PostgreSQL
+- Backend: Serverless, event-driven using GCP Cloud Run Functions on a Node.js runtime
+- Frontend: SAPUI5
+- Database: GCP PostgreSQL
 
 ## Live Link
 https://darkstoreinventorymanager.netlify.app/
