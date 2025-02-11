@@ -16,5 +16,8 @@ An enterprise app that can be used to manage dark store inventory
 https://darkstoreinventorymanager.netlify.app/
 
 ## App Preview
-https://github.com/user-attachments/assets/844cda00-62fb-4108-af66-90d6c899139c
+https://github.com/user-attachments/assets/da585805-ed09-489c-b532-d419cefab9ec
+
+
+
 
