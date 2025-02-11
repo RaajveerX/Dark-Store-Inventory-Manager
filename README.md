@@ -9,6 +9,7 @@
 - Backend: Serverless, event-driven using GCP Cloud Run Functions on a Node.js runtime
 - Frontend: SAPUI5
 - Database: GCP PostgreSQL
+- Containerized using Docker and pushed to GCP Artifact Registry (Experimenting with Cloud Run Engine)
 
 ## Live Link
 https://darkstoreinventorymanager.netlify.app/
