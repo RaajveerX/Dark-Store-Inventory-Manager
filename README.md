@@ -1,4 +1,5 @@
 # Dark Store Inventory Manager
+An enterprise app that can be used to manage dark store inventory
 
 ## Why
 - Startups in India like Zepto are offering 10-minute delivery across various metropolitan cities in India. They achieve this by leveraging the labor market and strategically placed dark stores (mini-warehouses meant for fulfilling online orders organized for speed and efficiency).
